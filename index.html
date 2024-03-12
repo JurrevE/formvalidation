@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation form site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="maincontent">
+      <form action="post" id="form">
+        <div class="inputdiv">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <div id="error">Please enter a correct email-address</div>
+        </div>
+
+        <div class="inputdiv">
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" required />
+          <div id="error">Please enter a correct country</div>
+        </div>
+
+        <div class="inputdiv">
+          <label for="zip-code">Zip-code</label>
+          <input type="text" id="zip-code" name="zip-code" />
+          <div id="error">Please enter a correct zip-code</div>
+        </div>
+
+        <div class="inputdiv">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+          <div id="error">Please enter a correct password</div>
+        </div>
+
+        <div class="inputdiv">
+          <label for="password-confirmation">Confirm Password:</label>
+          <input
+            type="password"
+            id="password-confirmation"
+            name="password-confirmation"
+          />
+          <div id="error">Please enter a the same password</div>
+        </div>
+
+        <button id="submitbutton">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.maincontent {
+  height: 100%;
+}
+
+#form {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inputdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#error {
+  display: none;
+}
+.error {
+  display: block;
+  border-color: red;
+}
+
+.good {
+  border-color: green;
+}
